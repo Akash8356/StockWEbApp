@@ -1,0 +1,254 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    overflow: hidden;
+    color: white;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url(../image/stockbg1.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.clearfix::after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-left: -40px;
+    margin-top: 20px;
+    
+}
+
+
+.menue-main{
+    float: right;
+    margin-top: 45px;
+
+}
+.menue-main li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+}
+.menue-main li a{
+    padding: 5px 0px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+
+.menue-main li a:hover{
+    /* border: 3px solid red; */
+    border-bottom: 3px solid #bf55ec; 
+
+
+}
+
+
+.main-content{
+    width: 1180px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+
+}
+h1{
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.btn{
+
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 8px 0px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s,color 0.2;
+}
+.btn-Register{
+    background-color: transparent;
+    color: #bf55ec;
+    margin-right: 15px;
+    border: 1px solid #bf55ec;
+}
+.btn-Register:hover{
+    background-color: #fff;
+
+}
+.btn-SignIn{
+    background-color: transparent;
+    color: #fff;
+    border:1px solid #fff;
+}
+.btn-SignIn:hover{
+    background-color: #bf55ec;
+
+}
+.colorchange{
+    animation: colorchangeakash 1s infinite;
+}
+@keyframes colorchangeakash {
+     0%{color: red;}
+    25%{color: #bf55ec;}
+    50%{color: greenyellow;}
+    75%{color: #fff;}
+    100%{color: skyblue;}
+    
+    
+    
+}
+.mobile-icon{
+    display: none;
+}
+/* 
+20px = 100%
+1px = x
+x= 100/20
+x=5%
+5xp= 25% */
+
+
+
+
+
+
+/* ///// Responsive query ////// */
+
+@media only screen and (max-width: 1180px){
+    .main-content{
+        width: 100%;
+        padding: 0px 4%;
+    }
+    .menue-main{
+        margin-right: 30px;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+}
+@media only screen and (max-width: 998px){
+    h1{font-size: 200%;}
+    
+
+}
+@media only screen and (max-width: 854px){
+    .menue-main{display: none;}
+    
+    .mobile-icon{
+
+        display: inline-block;
+        float: right;
+
+        color: #fff;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .menue-main{
+        float: left;
+    }
+    .menue-main li {
+        /* float: left; */
+        display: block;
+        margin-top: 10px;
+
+    }
+    
+}
+@media only screen and (max-width: 768px){
+    /* .menue-main{display: none;} */
+
+    h1{font-size: 180%;}
+}
+
+@media only screen and (max-width: 653px){
+    /* .logo{
+        height: 70px;
+        margin-top: 10px;
+    } */
+
+    h1{font-size: 160%;}
+    .menue-main{
+        height: 50px;
+        margin-top: 30px;
+    }
+   
+    .btn-Register{
+        background-color: #bf55ec;
+        color: #fff;
+        margin-right: 15px;
+        border: 1px solid #bf55ec;
+    }
+    .btn-Register:hover{
+        background-color: #fff;
+        color: #bf55ec;    
+    }
+    .btn-SignIn{
+        background-color: #fff;
+        color: #bf55ec;
+        border:1px solid #fff;
+    }
+    .btn-SignIn:hover{
+        background-color: #bf55ec;
+        color: #fff;
+    
+    }
+
+
+    /* nav{
+        height: 30px;
+    } */
+    /* ul{
+        width: 0%;
+    } */
+    /* img{
+        height: 20px;
+        width: 100%;
+    } */
+  
+
+}
+@media only screen and (max-width: 388px){
+    .logo{
+        height: 70px;
+        margin-top: 10px;
+    }
+    .menue-main li a {
+        font-size: 74%;
+    }
+    .menue-main{
+        height: 50px;
+        margin-top: 8px;
+    }
+
+}
+
+
+
+

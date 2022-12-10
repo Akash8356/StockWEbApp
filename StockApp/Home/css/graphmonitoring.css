@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    color: white;
+}
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+   
+}
+
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-left: -40px;
+    margin-top: 20px;
+    
+}
+.clearfix::after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.menue-main{
+    float: right;
+    margin-top: 45px;
+    margin-bottom: 10px;
+
+}
+.menue-main li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+}
+.menue-main li a{
+    padding: 5px 0px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+
+.menue-main li a:hover{
+    border-bottom: 3px solid #bf55ec; 
+
+
+}
+#menuuback{
+    background-color: black;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobile-icon{
+    display: none;
+}
+
+/* ///// Responsive query ////// */
+
+@media only screen and (max-width : 854px){
+    .logo{
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 1180px){
+    .main-content{
+        width: 100%;
+        padding: 0px 4%;
+    }
+    .menue-main{
+        margin-right: 30px;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+}
+@media only screen and (max-width: 998px){
+    
+
+}
+@media only screen and (max-width: 854px){
+    .menue-main{display: none;}
+    
+    .mobile-icon{
+
+        display: inline-block;
+        float: right;
+
+        color: #fff;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    .menue-main{
+        float: left;
+    }
+    .menue-main li {
+        display: block;
+        margin-top: 10px;
+
+    }
+    
+}
+@media only screen and (max-width: 768px){
+
+   
+}
+
+@media only screen and (max-width: 653px){
+  
+  
+
+}
+@media only screen and (max-width: 388px){
+  
+    .menue-main li a {
+        font-size: 74%;
+    }
+ 
+
+}
+
+
+

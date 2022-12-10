@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Hub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="Javascript" href="chart.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row clearfix">
+               
+                
+                <img  background="yellow" src="../image/logo.png" alt="Stock Hub" class="logo">
+                <ul class="menue-main" id="checkbariocon" >
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="crpto.html">Crypto Currency</a></li>
+                    <li><a href="graphmonitoring.html">Graph Monitor</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="../aboutus/index.html">About Us</a></li>
+
+                </ul>
+                <a href="#" class="mobile-icon" onclick="slideshow()" ><i class="fa fa-bars"></i></a>
+            </div>
+
+
+        </nav>
+        <div class="main-content" id="ContentRegister">
+            <h1>WELCOME TO <span class="colorchange"> Stock Hub</span>.<br>
+                WORLD OF Money</h1>
+            <a href="/login/StockApp/Home/html/login/signup.php" class="btn btn-Register">Sign Up</a>
+            <a href="/login/StockApp/Home/html/login/login.php" class="btn btn-SignIn">SignIn</a>
+         
+        </div>
+    </header>
+    <!-- <script type="tex/javascript">
+
+        function slideshow(){
+            var x = document.getElimentById('checkbariocon');
+            if(x.style.display === "none"){
+                x.style.display = "block";
+            }else{
+                x.style.display = "none"
+            }
+        }
+
+    </script> -->
+
+    <script type= "text/javascript">
+
+        function slideshow()
+        {
+            var x = document.getElementById("checkbariocon");
+            var y=document.getElementById("ContentRegister");
+            if(x.style.display === "none")
+            {
+                x.style.display = "block";
+                y.style.marginTop ="63px";
+                
+            }else
+            {
+                x.style.display = "none";
+                y.style.marginTop ="3px";
+            }
+
+
+        }
+        </script>
+
+</body>
+<!-- <script type= "text/javascript"> -->
+
+<!-- function slideshow()
+{
+    var x = document.getElementById("checkbariocon");
+    if(x.style.display === "none")
+    {
+        x.style.display = "none";
+    }else
+    {
+        x.style.display = "none";
+    }
+} -->
+<!-- </script> -->
+
+</html>

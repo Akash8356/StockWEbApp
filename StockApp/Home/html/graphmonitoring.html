@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>graphmonitoring</title>
+    <link rel="stylesheet" href="../css/crypto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+
+
+
+
+
+
+/* sajoas */
+
+/* nn4or34jp3 */
+.container1{
+	text-align: center;
+	background-color: #f5f5f5;
+}
+.header{
+	margin-top: 60px;
+	color: #444;
+	font-size: 20px;
+	margin: auto;
+	line-height: 50px;
+}
+.viewchart{
+  float: right;
+   border: 2px solid green; 
+   border-radius: 18px;
+   background:green;
+   color:white; 
+   text-decoration: none;
+    margin: 13px 4px;  
+    margin-left: 40px;
+    margin-top: 10px;
+    padding: 4px 7px;
+}
+.viewchart:hover{
+  color: green;
+  background-color: transparent;
+  border: 2px solid green;
+  border-radius: 18px;
+  text-decoration: none;
+}
+.warning{
+  float: right;
+   border: 2px solid rgb(11, 157, 255); 
+   border-radius: 10px;
+   background:rgb(11, 157, 255); 
+   color:white; 
+   text-decoration: none;
+    margin: 13px 4px;  
+    margin-left: 40px;
+    margin-top: 10px;
+    padding: 4px 7px;
+}
+.warning:hover{
+  color: rgb(11, 157, 255); 
+  background-color: transparent;
+  border: 2px solid rgb(11, 157, 255); 
+  border-radius: 10px;
+  text-decoration: none;
+}
+ .sub-container{
+    max-width: 100%;
+	margin: auto;
+	padding: 48px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: row;
+   
+} 
+.teams{
+	width: 650px;
+	padding: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border: 2px solid rgb(113, 113, 116);
+	border-radius: 18px;
+	flex-direction: column;
+}
+    </style>
+
+</head>
+<body>
+    <nav id="menuuback">
+        <div class="row clearfix">
+           
+            
+            <img  background="yellow" src="../image/logo.png" alt="Stock Hub" class="logo">
+            <ul class="menue-main" id="checkbariocon" >
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="crpto.html">Crypto Currency</a></li>
+                <li><a href="graphmonitoring.html">Graph Monitor</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="../aboutus/index.html">About Us</a></li>
+
+            </ul>
+            <a href="#" class="mobile-icon" onclick="slideshow()" ><i class="fa  fa-bars"></i></a>
+        </div>
+
+
+    </nav>
+   
+
+<div class="container1">
+       
+    <!-- <center><h3 style="color: purple;font-size: auto;">Stock Analysis</h3></center>
+    <hr> -->
+        <!-- <div class="header">
+            <h1>Our Team</h1>
+        </div> -->
+    <div class="sub-container">
+       
+        <div class="teams">
+            <div class="col mb-4" style="margin: 10px;">
+                <div class="card">
+                  <img src="../../LoginPage/dashboard/graphicon.jpg" class="card-img-top" alt="..." style="height: 400px; width: 600px; border-radius: 20px;">
+                  <div class="card-body" style="display: flex; flex-direction: row;">
+                    <h5 class="card-title" style="margin-top: 3px; color: black; font-style: bold; font-family: Georgia, 'Times New Roman', Times, serif;font-size: large;"> BTC <sub style="margin-top: 3px; color: rgb(255, 0, 0); font-style: bold; font-family: Georgia, 'Times New Roman', Times, serif;font-size: large;"><sup style="margin-top: 3px; color: rgb(255, 0, 0); font-style: bold; font-family: Georgia, 'Times New Roman', Times, serif;font-size: xx-large;">.</sup>Live View</sub></h5>
+                    <a href="../../charts/BTC/index.html" class="viewchart">View Charts</a>
+                  
+            
+                  </div>
+                </div>
+              </div>
+        </div> 
+         <div class="teams">
+            <div class="col mb-4" style="margin: 10px;">
+                <div class="card">
+                  <img src="../../LoginPage/dashboard/graphicon.jpg" class="card-img-top" alt="..." style="height: 400px; width: 600px; border-radius: 20px;">
+                  <div class="card-body" style="display: flex; flex-direction: row;">
+                    <h5 class="card-title" style="margin-top: 3px; color: black; font-style: bold; font-family: Georgia, 'Times New Roman', Times, serif;font-size: large;"> BTC <sub style="margin-top: 3px; color: rgb(255, 0, 0); font-style: bold; font-family: Georgia, 'Times New Roman', Times, serif;font-size: large;"><sup style="margin-top: 3px; color: rgb(255, 0, 0); font-style: bold; font-family: Georgia, 'Times New Roman', Times, serif;font-size: xx-large;">.</sup>Live View</sub></h5>
+                    <a href="../../charts/BTC/index.html" class="viewchart">View Charts</a>
+                  
+            
+                  </div>
+                </div>
+              </div>
+        </div> 
+         <div class="teams">
+            <div class="col mb-4" style="margin: 10px;">
+                <div class="card">
+                  <img src="../../LoginPage/dashboard/graphicon.jpg" class="card-img-top" alt="..." style="height: 400px; width: 600px; border-radius: 20px;">
+                  <div class="card-body" style="display: flex; flex-direction: row;">
+                    <h5 class="card-title" style="margin-top: 3px; color: black; font-style: bold; font-family: Georgia, 'Times New Roman', Times, serif;font-size: large;"> BTC <sub style="margin-top: 3px; color: rgb(255, 0, 0); font-style: bold; font-family: Georgia, 'Times New Roman', Times, serif;font-size: large;"><sup style="margin-top: 3px; color: rgb(255, 0, 0); font-style: bold; font-family: Georgia, 'Times New Roman', Times, serif;font-size: xx-large;">.</sup>Live View</sub></h5>
+                    <a href="../../charts/BTC/index.html" class="viewchart">View Charts</a>
+                  
+            
+                  </div>
+                </div>
+              </div>
+        </div> 
+         <div class="teams">
+            <div class="col mb-4" style="margin: 10px;">
+                <div class="card">
+                  <img src="../../LoginPage/dashboard/graphicon.jpg" class="card-img-top" alt="..." style="height: 400px; width: 600px; border-radius: 20px;">
+                  <div class="card-body" style="display: flex; flex-direction: row;">
+                    <h5 class="card-title" style="margin-top: 3px; color: black; font-style: bold; font-family: Georgia, 'Times New Roman', Times, serif;font-size: large;"> BTC <sub style="margin-top: 3px; color: rgb(255, 0, 0); font-style: bold; font-family: Georgia, 'Times New Roman', Times, serif;font-size: large;"><sup style="margin-top: 3px; color: rgb(255, 0, 0); font-style: bold; font-family: Georgia, 'Times New Roman', Times, serif;font-size: xx-large;">.</sup>Live View</sub></h5>
+                    <a href="../../charts/BTC/index.html" class="viewchart">View Charts</a>
+                  
+            
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="teams"style="border:none;">
+            <div class="col mb-4" style="margin: 10px;">
+                <div class="card">
+                  <!-- <img src="../image/stockbg1.jpg" class="card-img-top" alt="..." style="height: 400px; width: 600px; border-radius: 20px;"> -->
+                  <div class="card-body" style="display: flex; flex-direction: row;">
+                    <!-- <h5 class="card-title" style="margin-top: 9px; color: rgb(255, 255, 255); font-style: bold; font-family: Georgia, 'Times New Roman', Times, serif;font-size: large; background-color: blueviolet;padding-left: 7px; padding-right: 7px; padding-top: 6px; border-radius: 8px;"> For More Gragh for stock marketting---=> </h5> -->
+                    <h5 class="warning" > For More Gragh for stock marketting---=> </h5>
+
+                    <a href="login/login.php" class="viewchart">Click Here</a>
+                  
+            
+                  </div>
+                </div>
+              </div>
+        </div>
+       
+    </div>
+   
+      
+
+    
+</div>
+
+
+<!--  -->
+
+
+    <!-- <div class="row row-cols-1 row-cols-md-2" style="margin: 50px 20px; display: flex; flex-direction: row; ">
+ 
+        <div class="col mb-4" style="margin: 10px;">
+          <div class="card">
+            <img src="../image/stockbg1.jpg" class="card-img-top" alt="..." style="height: 400px; width: 650px;">
+            <div class="card-body" style="display: flex; flex-direction: row;">
+              <h5 class="card-title" style="margin-top: 3px; color: black;"> BTC Live View</h5>
+              <a href="../../charts/BTC/index.html" class="viewchart">View Charts</a>
+            
+      
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4" style="margin: 10px;">
+            <div class="card">
+              <img src="../image/stockbg1.jpg" class="card-img-top" alt="..." style="height: 400px; width: 650px;">
+              <div class="card-body" style="display: flex; flex-direction: row;">
+                <h5 class="card-title" style="margin-top: 3px; color: black;"> BTC Live View</h5>
+                <a href="../../charts/BTC/index.html" class="viewchart">View Charts</a>
+              
+        
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4" style="margin: 10px;">
+            <div class="card">
+              <img src="../image/stockbg1.jpg" class="card-img-top" alt="..." style="height: 400px; width: 650px;">
+              <div class="card-body" style="display: flex; flex-direction: row;">
+                <h5 class="card-title" style="margin-top: 3px; color: black;"> BTC Live View</h5>
+                <a href="../../charts/BTC/index.html" class="viewchart">View Charts</a>
+              
+        
+              </div>
+            </div>
+          </div>
+           
+      </div> -->
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type= "text/javascript">
+
+        function slideshow()
+        {
+            var x = document.getElementById("checkbariocon");
+            var y=document.getElementById("ContentRegister");
+            // var menuheight = document.getElementById("menuuback")
+            if(x.style.display === "none")
+            {
+                x.style.display = "block";
+                y.style.marginTop ="63px";
+                
+                
+            }else
+            {
+                x.style.display = "none";
+                y.style.marginTop ="3px";
+            }
+            
+
+
+        }
+        </script>
+    
+</body>
+</html>

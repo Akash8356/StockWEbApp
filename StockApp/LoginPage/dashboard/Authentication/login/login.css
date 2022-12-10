@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+
+section .imgBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+
+}
+section .imgBx::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(235deg, #bf55ec 30%, #ff4584 50%);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+section .imgBx img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+/* background-image: linear-gradient(135deg, #F761A1 10%, #8C1BAB 100%); */
+/* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% ); */
+
+section .formcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+section .formcontainer .formBx{
+    width: 50%;
+}
+section .formcontainer .formBx h2{
+    color: #607d8b;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #bf55ec;
+    display: inline-block;
+    letter-spacing: 1px;
+
+}
+.formBx a .fa-home {
+    color: #bf55ec;
+    /* display: inline-block;*/
+    border: 1px solid #fff;
+    padding: 4px;
+    margin-top: -10px;
+    border-radius: 50%;
+    float: right; 
+    
+}
+.folloicon{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.socialmedia{
+    margin: 5px 15px;
+    padding: 2px;
+    border: 2px solid #bf55ec;
+    border-radius: 8px;
+}
+.socialmedia:hover{
+    margin: 5px 15px;
+    padding: 2px;
+    border: 2px solid #bf55ec;
+    border-radius: 8px;
+    background: #bf55ec;
+    color: white;
+}
+
+.socialmedia .fa-facebook{
+    margin: 2px 8px;
+}
+.socialmedia .fa-instagram{
+    margin: 2px 4px;
+
+}.socialmedia .fa-twitter{
+    margin: 2px 3px;
+
+}
+
+
+.formBx a .fa-home:hover{
+    color: rgb(0, 0, 0);
+    border: 1px solid #000000;
+    padding: 4px;
+    margin-top: -10px;
+    border-radius: 50%;
+    background: #bf55ec;
+    float: right;
+    /* ff4584  */
+}
+section .formcontainer .formBx .inputBx{
+    margin-bottom: 20px;
+}
+section .formcontainer .formBx .inputBx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #607d8b;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-style: bold;
+}
+section .formcontainer .formBx .inputBx input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 30px;
+}
+.remember{
+    margin-bottom: 10px;
+    color: #607d8b;
+    font-weight: 400;
+    font-size: 14px;
+}
+section .formcontainer .formBx .inputBx input[type="submit"]{
+background: transparent;
+color: #bf55ec;
+outline: none;
+border: 2px solid #bf55ec;
+font-weight: 500;
+cursor: pointer;
+}
+section .formcontainer .formBx .inputBx input[type="submit"]:hover{
+    background: #bf55ec;
+    color: #fff;
+    outline: none;
+    border: 2px solid #bf55ec;
+    font-weight: 500;
+    cursor: pointer;
+}
+section .formcontainer .formBx .inputBx p {
+    color: #607d8b;
+}
+section .formcontainer .formBx .inputBx p a{
+    color: #bf55ec;
+}
+@media (max-width:768px){
+    section .imgBx{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    section .formcontainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    section .formcontainer .formBx .folloicon .socialmedia{
+        /* margin: 5px 15px;
+        padding: 2px; */
+                background: #607d8b;
+        color: white;
+
+
+         border: 2px solid #607d8b;
+        border-radius: 50%;
+    }
+    section .formcontainer .formBx .folloicon .socialmedia:hover{
+      
+        color: rgb(243, 8, 86);
+    }
+    .formBx a .fa-home {
+        color: #fff;
+        background: #607d8b;
+        /* display: inline-block;*/
+        border: 1px solid #607d8b;
+        padding: 4px;
+        margin-top: -10px;
+        border-radius: 50%;
+        float: right; 
+        
+    }
+    .formBx a .fa-home:hover{
+        color: rgb(243, 8, 86);
+        border: 1px solid #607d8b;
+        background: #607d8b;
+
+
+
+    }
+    section .formcontainer .formBx .inputBx input{
+        color: rgb(32, 32, 32);
+    }
+}
+
+
+

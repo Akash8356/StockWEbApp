@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto</title>
+    <link rel="stylesheet" href="../css/crypto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
+    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinPriceBlock.js"></script>
+
+</head>
+<body>
+    <nav id="menuuback">
+        <div class="row clearfix">
+           
+            
+            <img  background="yellow" src="../image/logo.png" alt="Stock Hub" class="logo">
+            <ul class="menue-main" id="checkbariocon" >
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="crpto.html">Crypto Currency</a></li>
+                <li><a href="graphmonitoring.html">Graph Monitor</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="../aboutus/index.html">About Us</a></li>
+
+            </ul>
+            <a href="#" class="mobile-icon" onclick="slideshow()" ><i class="fa  fa-bars"></i></a>
+        </div>
+
+
+    </nav>
+    <div id="coinmarketcap-widget-marquee" coins="1,1027,2010,5426,1839,825,52" currency="USD" theme="dark" transparent="false" show-symbol-logo="false"></div>
+   <div class="coinmarketcap-currency-widget" data-currencyid="1" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>
+   <div class="coinmarketcap-currency-widget" data-currencyid="1027" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>
+   <div id="coinmarketcap-widget-coin-price-block" coins="1,1027,825" currency="USD" theme="light" transparent="true" show-symbol-logo="false"></div>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type= "text/javascript">
+
+        function slideshow()
+        {
+            var x = document.getElementById("checkbariocon");
+            var y=document.getElementById("ContentRegister");
+            // var menuheight = document.getElementById("menuuback")
+            if(x.style.display === "none")
+            {
+                x.style.display = "block";
+                // y.style.marginTop ="63px";
+                
+                
+            }else
+            {
+                x.style.display = "none";
+                // y.style.marginTop ="3px";
+            }
+            
+
+
+        }
+        </script>
+
+    
+</body>
+
+
+
+
+
+
+
+<!-- ///////////////////Fetching api////////////////////////// -->
+
+
+<!-- 
+
+
+
+<script>
+
+    var apikey = {
+        key:'83696655-86c7-4c35-a162-fa3dc3e2eb80'
+        
+    }
+
+
+
+request('GET','https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest?CMC_PRO_API_KEY='+ apikey.key )
+.then((r1)=>{
+    var x1 = JSON.parse(r1.target.responseText)
+    console.log(x1);
+}).catch();
+
+
+
+
+
+
+ function request(method,url){
+     return new Promise(function(resolve,reject){
+         var xhr= new XMLHttpRequest();
+         xhr.open(method,url);
+         xhr.onload = resolve;
+         xhr.onerror = reject;
+         xhr.send();
+
+
+
+     });
+ }
+
+</script> -->
+</html>
